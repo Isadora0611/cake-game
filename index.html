@@ -133,11 +133,11 @@ class Particle{
     const s=this.size*this.life; if(s<=0)return;
     ctx.globalAlpha=this.life;
     if(this.isText){
-      // 马卡龙字母渲染：加柔和的深色描边防看不清，内部纯色填充
+      // 马卡龙字母渲染
       const fontSize=Math.max(10, 30*this.life);
       ctx.font=`bold ${fontSize}px 'Segoe UI', sans-serif`;
       ctx.textAlign='center';
-      ctx.strokeStyle='rgba(80, 40, 10, 0.25)'; // 极淡的棕色描边
+      ctx.strokeStyle='rgba(80, 40, 10, 0.25)'; // 棕色描边
       ctx.lineWidth=3;
       ctx.strokeText(this.text, this.x, this.y);
       ctx.fillStyle=this.color;
