@@ -155,7 +155,7 @@ class Particle{
 // 生成马卡龙色系文字粒子
 function spawnTextParticle(x, y) {
   const letters = ['K', 'W', 'Y'];
-  // 绝对和谐的马卡龙配色：樱花粉、薄荷绿、香芋紫
+  // 樱花粉、薄荷绿、香芋紫
   const colors = ['#FFB7C5', '#A8E6CF', '#D4A5FF']; 
   const idx = Math.floor(Math.random() * letters.length);
   
@@ -228,7 +228,7 @@ let winFrame=0, loseFrame=0, winPetals=[];
 
 function resetGame(){
   basket.x=345; cakes=[]; score=0; missed=0; spawnTimer=0; spawnRate=35;
-  winFrame=0; loseFrame=0; particles=[]; winPetals=[]; state='playing';
+  winFrame=0; loseFrame=0; particles=[]; winPetals=[]; state='playing';startBGM();
 }
 
 // ============ 输入 ============
